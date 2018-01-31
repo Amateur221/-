@@ -4,32 +4,44 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
-		div,ul,li{
+		body,ul,li{
 			margin: 0;
 			padding: 0;
 		}
-		.nav{
-			background-image:url(images/li_bg.png); 
-			width: 1042px;
-			height: 50px;
-		}
-		.nav .nav_con{
-			
-		}
 		li{
-			list-style:none;
+			list-style: none;
 		}
-		li a{
-			text-decoration:none;
+		.nav{
+			height: 55px;
+			background: url(images/head_bg.jpg);
+			margin-top:30px;
+			border-top:1px solid #666;
+		}
+		.nav_con{
+			width: 1000px;
+			height: 55px;
+			margin:0 auto;
+		}
+		.nav_con ul li{
+			float: left;
 			display: inline-block;
-			float:left;
+			height: 55px;
+			width: 132px;
+			font:19px/55px 微软雅黑;
+			background: url(images/li_bg.png) no-repeat right;
+			text-align: center;
 		}
-
+		.nav_con ul li a{
+			text-decoration: none;
+			color:#333;
+		}
+		.nav_con ul li a:hover{
+			color:#0a0;
+		}
 	</style>
 </head>
 <body>
 	<div class="nav">
-		<div class="head"></div>
 		<div class="nav_con">
 			<ul>
 				<li><a href="#">智能手机</a></li>
