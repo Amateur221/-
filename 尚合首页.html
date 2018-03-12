@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
-		div,body,ul,li{
+		div,body,ul,li,img,input{
 			margin: 0;
 			padding: 0;
 		}
@@ -29,15 +29,65 @@
 			float: right;
 		}
 		.search input{
-			float: left;
-			height: 25px;
+			vertical-align: center;
+			height: 29px;
 		}
 		.search a{
 			display: inline-block;
 			width: 33px;
 			height: 32px;
 			background: url(images/search2.jpg);
+			vertical-align: bottom;
+		}
+		.nav{
+			height: 55px;
+			background: url(images/nav_bg.png);
+			border-top: 1px solid #cecece;
+		}
+		.nav .nav_con{
+			height: 55px;
+			width: 1000px;
+			margin: 0 auto;
+		}
+		.nav .nav_con li{
 			float: left;
+			background: url(images/nav_bg-line.png) no-repeat right;
+		}
+		.nav .nav_con li a{
+			display: inline-block;
+			height: 55px;
+			padding: 0 20px;
+			font:18px/55px 微软雅黑;
+			color: #000;
+			text-decoration: none;
+		}
+		.nav .nav_con li a:hover{
+			color: #0c0;
+		}
+		.banner{
+			width: 980px;
+			height: 597px;
+			margin: 0 auto;
+		}
+
+		.inform{
+			height: 30px;
+			background-color: #ececec;
+			border-top: 1px solid #cecece;
+			border-bottom: 1px solid #cecece;
+		}
+		.inform .inform_con{
+			height: 30px;
+			width: 1000px;
+			margin: 0 auto;
+		}
+		.inform .inform_con .notice{
+			font:12px/30px 微软雅黑;
+		}
+		.inform .inform_con .share{
+			height: 16px;
+			width: 128px;
+			padding-top: 7px;
 		}
 	</style>
 </head>
@@ -47,9 +97,41 @@
 			<img src="images/logo.jpg" alt="">
 		</div>
 		<div class="search fr">
-			<input type="text" value="请输入...">
-			<a href="#"></a>
+			<input type="text" value="请输入..."><a href="#"></a>
 		</div>
+	</div>
+	<div class="nav">
+		<div class="nav_con">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">智能手机</a></li>
+				<li><a href="#">平板电脑</a></li>
+				<li><a href="#">配件</a></li>
+				<li><a href="#">服务支持</a></li>
+				<li><a href="#">关于尚合</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="banner">
+		<img src="images/banner.jpg" alt="">
+	</div>
+	<div class="inform">
+		<div class="inform_con">
+			<div class="notice fl">最新公告：尚合智能手机Aone入网证已获取工信部审批下发</div>
+			<div class="share fr">
+				<a href="#"><img src="images/zone.png" alt=""></a>
+				<a href="#"><img src="images/weibo.png" alt=""></a>
+				<a href="#"><img src="images/renren.png" alt=""></a>
+				<a href="#"><img src="images/xinlang.png" alt=""></a>
+			</div>
+		</div>
+	</div>
+	<div class="con">
+		<div class="pro">
+			
+		</div>
+		<div class="news"></div>
+		<div class="tech"></div>
 	</div>
 </body>
 </html>
